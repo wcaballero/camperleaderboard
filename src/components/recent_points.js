@@ -34,7 +34,7 @@ export default class RecentPosts extends Component {
       return (
         <tr key={user.username}>
           <td className="text-xs-left">{index + 1}</td>
-          <td className="text-xs-left"><img className="img-responsive img-thumbnail" src={user.img} alt={`img of ${user.username} user`} />{user.username}</td>
+          <td className="text-xs-left"><img className="img-responsive img-thumbnail" src={user.img} alt={`img of ${user.username} user`} /><a href={`https://www.freecodecamp.com/${user.username}`} >{user.username}</a></td>
           <td>{user.recent}</td>
           <td>{user.alltime}</td>
         </tr>
