@@ -56,8 +56,8 @@ class App extends Component {
             <tr className="table-bordered">
               <th>#</th>
               <th>Camper name</th>
-              <th>Points in past 30 days <img src={this.state.recentArrow} alt="RECENTPOINTS" onClick={() => {this.togglePoints("RECENTPOINTS");}}/></th>
-              <th>All time points <img src={this.state.allTimeArrow} alt="ALLTIMEPOINTS" onClick={() => {this.togglePoints("ALLTIMEPOINTS");}}/></th>
+              <th><img src={this.state.recentArrow} alt="RECENTPOINTS" onClick={() => {this.togglePoints("RECENTPOINTS");}}/> Points in past 30 days</th>
+              <th><img src={this.state.allTimeArrow} alt="ALLTIMEPOINTS" onClick={() => {this.togglePoints("ALLTIMEPOINTS");}}/> All time points</th>
             </tr>
           </thead>
           {this.renderComponent()}
